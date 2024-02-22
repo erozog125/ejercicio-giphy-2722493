@@ -1,0 +1,6 @@
+KEY:
+WUpVfdFrExV3pZhY7X2sSX1NsNMJso2b
+
+
+URL:
+https://api.giphy.com/v1/gifs/categories?api_key=WUpVfdFrExV3pZhY7X2sSX1NsNMJso2b
