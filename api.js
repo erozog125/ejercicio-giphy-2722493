@@ -23,13 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 `
                 <div>
                     <h2>${category.name}</h2>
-                    <img src="${gifData.image}" alt="${gifData.title}">
+                    <img src="${gifData.images.original.url}" alt="${gifData.title}">
+                    <p>${gifData.title}</p>
                 </div>
                 `
             );
             main.appendChild(card);
-        });
-    }
+        });
+    }
 
 
 
