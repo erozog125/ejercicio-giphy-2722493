@@ -1,0 +1,5 @@
+Usted deberá crear una rama con su nombre completo, y allí subir el ejercicio, consumiendo api de giphy.
+
+* Fecha y hora límite: 22-02-2024 a las 11:59 pm
+* Pueden trabajar con la api de Tenor o giphy
+* El día 23-02-2024 sustentarán 5 aprendices al azar, en caso de que no sea clara la sustentación. Realizaremos un instrumento de evaluación.
