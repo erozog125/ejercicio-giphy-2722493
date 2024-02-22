@@ -6,30 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="gifs.css">
 </head>
-
-<header>
-    <h1> tus gifs, tu estilo </h1>
-
-</header>
 <body>
+    <header>
+        <h1> tus gifs, tu estilo </h1>
+    </header>
 
     <section class="g">
-        
-        
-        <h2> tendencas en gifs</h2>
-
-        <div id="cardContainer"></div>
-
+        <h2> tendencias en gifs</h2>
+        <div id="trendingCards"></div> 
     </section>
 
     <section>
-        <div id="cardContainer2">
-        <h4> busca tus gifs faviritos</h4>
-    </div>
-        
+        <form id="search">
+            <div id="searchForm">
+                <h3> busca tus gifs favoritos</h3>
+                <input type="text" name="buscador" id="searcher" placeholder="Buscar...">
+                <button type="submit">Adelante</button>
+            </div>
+        </form>
+        <div id="searchedCards"></div> 
     </section>
 
     <script src="gifs.js"></script>
-
 </body>
 </html>
