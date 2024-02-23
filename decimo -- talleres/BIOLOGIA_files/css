@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Nova Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=Cn-0JtiGWQ5Ajb--MRKfZXTXpPIJZUeCrl7W1MOXYLs7Xmp7Yjj_57NamtDO2ytj9b3gmVS4uCVQhu7Me0-yRRUUwU1KRncKkoQKxJuPKg4XTvtij35jp0yLNNX5LNme85HtoTbGNdADEYhXSzxewxEZu-ekADsn-XjfQYbXAzJycltvIePU5foXQlgs82r_JusQFedYFyzY0KZDxD8&skey=573d932cf583f4f3&v=v18) format('woff2');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/l/font?kit=pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4G1ilnsUerCtcQhDxv69jf6jklSppE5ltUMe44bdf_U2LyErlqeDabFHG0_YJ_lxccKlMnNUHhSMZQ3dO4oxHCGwfhzttzVfMeZaYzhRtywv56cVwF_qCKwpH6amKXu7jtMkzb3eMj7I82e25qbocmLaaBPwzClyFb_z2fdkTtHHm6XPeBfMeD7pII9R8AAZTg6BA&skey=60bfdc605ddb00b1&v=v15) format('woff2');
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/l/font?kit=pe1mMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp5F5bxqqtQ1yiU4GMS5nsUerCtcQhDxv69jf6jklSppE5ltUMe44bdf_U2LyErlqeDabFHG0_YJ_lxccKlMnNUHhSMZQ3dO4oxHCGwfhzttzVfMeZaYzhRtywv56cVwF_qCKwpH6amKXu7jtMkzb3eMj7I82e25qbocmLaaBPwzClyFb_z2fdkTtHHm6XPeBfMeD7pII9R8AAZTg6BA&skey=60bfdc605ddb00b1&v=v15) format('woff2');
+}
+@font-face {
+  font-family: 'Ribeye Marrow';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=GFDsWApshnqMRO2JdtRZ2d0vEAkL2mErQvNxQ1rgLBFwupfFUmTGcA8AsHXlGqDqfga36FqQIYWGhqNBOJ0ap7j1I5OlT9hzILL6lFSLdwVz_PcazCbSi0mSsXLUajc11CVFVTJzCynyeQGmJXNoo4hxGJbSlQRHu2apzEn-rTi2PTrPT_jwZEX65uMIkTgIEXgd4OBo94uq85mBrk0OtMvp&skey=b09ef2bd866c87a6&v=v22) format('woff2');
+}
