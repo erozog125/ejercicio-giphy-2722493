@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.div1 {
+    /* border: solid 3px red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: .0rem .2rem .1rem rgba(0, 0, 0, 0.373);
+    cursor: pointer;
+}
+
+.div1-2 {
+    /* border: solid 3px blue; */
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-1 {
+    height: 2.5rem;
+    width: 7rem;
+    background-color: orangered;
+    color: white;
+    font-size: 1rem;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.btn-2 {
+    height: 2.5rem;
+    width: 10rem;
+    background-color: white;
+    color: orangered;
+    border-color: orangered;
+    border: solid 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+
+.menu {
+    gap: 4.5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu span {
+    border: solid 2.1px black;
+    width: 1.8rem;
+    border-radius: 10rem;
+    box-shadow: .0rem .2rem .04rem rgba(0, 0, 0, 0.122);
+}
+
+.div2 {
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+input {
+    width: 50rem;
+    height: 3rem;
+    border-radius: 50rem;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+}
+
+input, .btn-1, .btn-2, .img-gif{
+    box-shadow: .0rem .2rem .2rem rgba(0, 0, 0, 0.373);
+}
+
+/* MAIN */
+
+body {
+    height: 100vh;
+    /* border: 5px solid yellow; */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* border: 5px solid green; */
+    height: 78%;
+}
+
+.main-container {
+    /* border: 5px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.div-container {
+    width: auto;
+    height: auto;
+    /* border: 4px solid red; */
+    text-align: center;
+}
+
+.img-gif {
+    width: 13rem;
+    height: 10rem;
+    border-radius: 7%;
+    cursor: pointer;
+}
+
+.p-title {
+    width: 13rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
