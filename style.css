@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.h2{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border:solid 2px black;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.buscar{
+    width: 5.5rem;
+    margin-left: 6px;
+    border-radius: 5px;
+    border: solid 2px black;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+#containers{
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
