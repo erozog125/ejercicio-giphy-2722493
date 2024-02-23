@@ -33,6 +33,7 @@ function showGifs(Gifs) {
   const { images, title } = Gifs
   const { url } = images.downsized
   const gif = document.createElement('img')
+  gif.id="gif"
   gif.src = url
   gif.alt = title
 
