@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: Arial, sans-serif;
+   background-color: #FFFFBF;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+h2 { 
+    color: black;
+    padding-top: 40px;
+}
+#searchInput {
+    width: 300px;
+    height: 2rem;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 20px unset rgb(17, 0, 255);
+}
+button{
+    border-radius: 8px ;
+    border: 8px unset rgb(255, 0, 0);
+    padding: 10px ;
+    align-items: center;
+}
+
+#gifContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Container-v{
+    text-align: center;
+    padding: 30px 0;
+
+}
+.gif {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    
+}
+
+footer {
+    background-color: #ffffbf;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
