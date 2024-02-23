@@ -1,0 +1,167 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1d1c1c;
+  padding: 20px 0;
+}
+
+header img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+header input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+header button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.categorias1 {
+  background-color: #262424cf;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.categorias1 {
+  background-color: #363535;
+  padding: 20px 0;
+}
+
+.categorias1 h2 {
+  color: #e9dddd;
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+
+.categorias1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.categorias1 li {
+  margin: 10px;
+}
+
+.categorias1 a {
+  color: #e9dddd;
+  font-size: 25px;
+}
+
+.reacciones {
+  padding: 20px 0;
+}
+
+.reacciones h2 {
+  margin-bottom: 30px;
+  font-size: 45px;
+  background-color: #363535;
+  color: #e9dddd;
+}
+
+.reacciones .grid-container {
+  grid-gap: 10px;
+}
+
+.reacciones li {
+  background-color: #242222;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.reacciones li img {
+  margin-bottom: 10px;
+}
+
+.reacciones li p {
+  font-size: 16px;
+  margin: 0;
+  color: #e9dddd;
+}
+
+.grid-container {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.gif-container {
+  border: 8px solid #302e2e;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.gif-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.gif-title {
+  font-size: 14px;
+  margin-top: 5px;
+}
+footer {
+  font-size: 14px;
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  text-align: center;
+}
