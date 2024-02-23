@@ -1,39 +1,54 @@
-const API_KEY = "LeuS1PAyEtRvOAinsXSawT7uDjePHAym";
-const TRENDING_ENDPOINT = `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=10`;
-const SEARCH_ENDPOINT = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&limit=10`;
+document.addEventListener('DOMContentLoaded', () => {
 
-async function fetchGifs(endpoint) {
-  try {
-    const response = await fetch(endpoint);
-    const data = await response.json();
-    return data.data;
-  } catch (error) {
-    console.error("Error fetching GIFs:", error);
-    return [];
+
+  function gif(done){
+      const promiseURL = fetch('https://api.giphy.com/v1/gifs/categories?api_key=WUpVfdFrExV3pZhY7X2sSX1NsNMJso2b') 
+  
+      promiseURL
+      .then(response => response.json())
+      .then(data =>{
+          done(data.data)
+      })
+      .catch(error => console.error('error searching gif', error));
   }
-}
 
-async function searchGifs() {
-  const searchInput = document.getElementById("searchInput").value;
-  const endpoint = `${SEARCH_ENDPOINT}&q=${searchInput}`;
-  const gifs = await fetchGifs(endpoint);
-  displayGifs(gifs);
-}
 
-async function displayTrendingGifs() {
-  const gifs = await fetchGifs(TRENDING_ENDPOINT);
-  displayGifs(gifs);
-}
+  function renderGifs(gifts){
+      const main = document.querySelector('main');
+      main.innerHTML = '';
 
-function displayGifs(gifs) {
-  const gifContainer = document.getElementById("gifContainer");
-  gifContainer.innerHTML = "";
-  gifs.forEach((gif) => {
-    const gifElement = document.createElement("img");
-    gifElement.src = gif.images.fixed_height.url;
-    gifElement.classList.add("gif");
-    gifContainer.appendChild(gifElement);
+      gifts.forEach(category => {
+          const gifData = category.gif;
+          const card = document.createRange().createContextualFragment(
+              `
+              <div>
+                  <h2>${category.name}</h2>
+                  <img src="${gifData.images.original.url}" alt="${gifData.title}">
+                  <p>${gifData.title}</p>
+              </div>
+              `
+          );
+          main.appendChild(card);
+       });
+    }
+
+
+
+
+
+  gif(gifts => {
+      renderGifs(gifts);
   });
-}
 
-window.onload = displayTrendingGifs;
+  const searchInput = document.querySelector('input[type="search"]');
+  searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      
+      gif(gifts => {
+          const filteredGifts = gifts.filter(category => category.name.toLowerCase().includes(searchTerm));
+          renderGifs(filteredGifts);
+      });
+  });
+
+});
