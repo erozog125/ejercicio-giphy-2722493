@@ -1,10 +1,10 @@
 function buscarGifInicial() {
-    var apiKey = "pWyTBl9Twn7NM2jANxpEf2RO08KZwWnA";
-    var palabrasAleatorias = ["random", "funny", "cute", "nature", "animals", "sports", "gaming", "music", "movies"];
-    var query = palabrasAleatorias[Math.floor(Math.random() * palabrasAleatorias.length)];
-    var endpoint = "https://api.giphy.com/v1/gifs/search";
-    var limit = 15;
-    var url = `${endpoint}?api_key=${apiKey}&q=${query}&limit=${limit}`;
+    let apiKey = "pWyTBl9Twn7NM2jANxpEf2RO08KZwWnA";
+    let palabrasAleatorias = ["random", "funny", "cute", "nature", "animals", "sports", "gaming", "music", "movies"];
+    let query = palabrasAleatorias[Math.floor(Math.random() * palabrasAleatorias.length)];
+    let endpoint = "https://api.giphy.com/v1/gifs/search";
+    let limit = 15;
+    let url = `${endpoint}?api_key=${apiKey}&q=${query}&limit=${limit}`;
 
     fetch(url)
         .then(response => response.json())
@@ -15,11 +15,11 @@ function buscarGifInicial() {
 }
 
 function buscarGif() {
-    var apiKey = "pWyTBl9Twn7NM2jANxpEf2RO08KZwWnA";
-    var query = document.getElementById("searchInput").value;
-    var endpoint = "https://api.giphy.com/v1/gifs/search";
-    var limit = 10;
-    var url = `${endpoint}?api_key=${apiKey}&q=${query}&limit=${limit}`;
+    let apiKey = "pWyTBl9Twn7NM2jANxpEf2RO08KZwWnA";
+    let query = document.getElementById("searchInput").value;
+    let endpoint = "https://api.giphy.com/v1/gifs/search";
+    let limit = 10;
+    let url = `${endpoint}?api_key=${apiKey}&q=${query}&limit=${limit}`;
 
     fetch(url)
         .then(response => response.json())
@@ -30,12 +30,12 @@ function buscarGif() {
 }
 
 function mostrarGifs(gifs) {
-    var gifContainer = document.getElementById("gifContainer");
+    let gifContainer = document.getElementById("gifContainer");
     gifContainer.innerHTML = "";
 
     gifs.forEach(gif => {
-        var gifUrl = gif.images.fixed_height.url;
-        var gifElement = document.createElement("img");
+        let gifUrl = gif.images.fixed_height.url;
+        let gifElement = document.createElement("img");
         gifElement.setAttribute("src", gifUrl);
         gifElement.setAttribute("alt", "GIF");
         gifElement.classList.add("gif");
